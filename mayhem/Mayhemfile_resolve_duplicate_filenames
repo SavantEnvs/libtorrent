@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: resolve_duplicate_filenames
+cmds:
+  - cmd: /mayhem/resolve_duplicate_filenames
+    libfuzzer: true

@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: lsd
+cmds:
+  - cmd: /mayhem/lsd
+    libfuzzer: true

@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: rtc_tracker_offer
+cmds:
+  - cmd: /mayhem/rtc_tracker_offer
+    libfuzzer: true

@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: sdp_offer
+cmds:
+  - cmd: /mayhem/sdp_offer
+    libfuzzer: true

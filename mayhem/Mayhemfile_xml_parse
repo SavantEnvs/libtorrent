@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: xml_parse
+cmds:
+  - cmd: /mayhem/xml_parse
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/xml_parse/testsuite

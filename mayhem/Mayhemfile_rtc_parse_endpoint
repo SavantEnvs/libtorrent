@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: rtc_parse_endpoint
+cmds:
+  - cmd: /mayhem/rtc_parse_endpoint
+    libfuzzer: true

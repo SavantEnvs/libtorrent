@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: sanitize_path
+cmds:
+  - cmd: /mayhem/sanitize_path
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sanitize_path/testsuite

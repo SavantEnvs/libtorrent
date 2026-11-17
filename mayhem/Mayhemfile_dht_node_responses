@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: dht_node_responses
+cmds:
+  - cmd: /mayhem/dht_node_responses
+    libfuzzer: true

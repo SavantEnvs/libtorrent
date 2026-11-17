@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: session_params
+cmds:
+  - cmd: /mayhem/session_params
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/session_params/testsuite

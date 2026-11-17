@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: identify_client
+cmds:
+  - cmd: /mayhem/identify_client
+    libfuzzer: true

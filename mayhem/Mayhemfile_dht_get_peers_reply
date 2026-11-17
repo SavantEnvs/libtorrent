@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: dht_get_peers_reply
+cmds:
+  - cmd: /mayhem/dht_get_peers_reply
+    libfuzzer: true

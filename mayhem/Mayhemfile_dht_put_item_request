@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: dht_put_item_request
+cmds:
+  - cmd: /mayhem/dht_put_item_request
+    libfuzzer: true

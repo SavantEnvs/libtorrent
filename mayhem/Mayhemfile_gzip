@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: gzip
+cmds:
+  - cmd: /mayhem/gzip
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gzip/testsuite

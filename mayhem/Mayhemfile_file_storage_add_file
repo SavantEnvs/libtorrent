@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: file_storage_add_file
+cmds:
+  - cmd: /mayhem/file_storage_add_file
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/file_storage_add_file/testsuite

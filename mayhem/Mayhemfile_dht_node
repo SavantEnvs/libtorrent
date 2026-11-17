@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: dht_node
+cmds:
+  - cmd: /mayhem/dht_node
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dht_node/testsuite

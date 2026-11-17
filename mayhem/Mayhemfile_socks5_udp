@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: socks5_udp
+cmds:
+  - cmd: /mayhem/socks5_udp
+    libfuzzer: true

@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: piece_layers
+cmds:
+  - cmd: /mayhem/piece_layers
+    libfuzzer: true

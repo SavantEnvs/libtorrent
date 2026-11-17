@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: convert_from_native
+cmds:
+  - cmd: /mayhem/convert_from_native
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/convert_from_native/testsuite

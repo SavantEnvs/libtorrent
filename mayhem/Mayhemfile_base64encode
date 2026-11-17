@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: base64encode
+cmds:
+  - cmd: /mayhem/base64encode
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/base64encode/testsuite

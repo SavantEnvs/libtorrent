@@ -1,0 +1,11 @@
+project: savantenvs/libtorrent
+target: peer_conn
+cmds:
+  - cmd: /mayhem/peer_conn
+    libfuzzer: true
+    # upstream's harness drives a live libtorrent session over real sockets and waits (wall clock)
+    # for it to settle between inputs — up to several seconds; give each exec room for that.
+    timeout: 20
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/peer_conn/testsuite

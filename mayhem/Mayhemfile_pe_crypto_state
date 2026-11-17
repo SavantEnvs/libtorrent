@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: pe_crypto_state
+cmds:
+  - cmd: /mayhem/pe_crypto_state
+    libfuzzer: true

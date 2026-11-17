@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: verify_encoding
+cmds:
+  - cmd: /mayhem/verify_encoding
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/verify_encoding/testsuite

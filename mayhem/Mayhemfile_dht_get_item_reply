@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: dht_get_item_reply
+cmds:
+  - cmd: /mayhem/dht_get_item_reply
+    libfuzzer: true

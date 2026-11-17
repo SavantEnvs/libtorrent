@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: parse_magnet_uri
+cmds:
+  - cmd: /mayhem/parse_magnet_uri
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/parse_magnet_uri/testsuite

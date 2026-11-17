@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: merkle_tree_add_hashes
+cmds:
+  - cmd: /mayhem/merkle_tree_add_hashes
+    libfuzzer: true

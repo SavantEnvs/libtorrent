@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: websocket_tracker
+cmds:
+  - cmd: /mayhem/websocket_tracker
+    libfuzzer: true

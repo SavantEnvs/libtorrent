@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: natpmp
+cmds:
+  - cmd: /mayhem/natpmp
+    libfuzzer: true

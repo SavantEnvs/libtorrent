@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: parse_int
+cmds:
+  - cmd: /mayhem/parse_int
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/parse_int/testsuite

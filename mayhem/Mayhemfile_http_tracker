@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: http_tracker
+cmds:
+  - cmd: /mayhem/http_tracker
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/http_tracker/testsuite

@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: utp_stream
+cmds:
+  - cmd: /mayhem/utp_stream
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: bdecode_entry
+cmds:
+  - cmd: /mayhem/bdecode_entry
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/bdecode_entry/testsuite

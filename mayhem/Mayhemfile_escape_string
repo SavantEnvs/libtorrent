@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: escape_string
+cmds:
+  - cmd: /mayhem/escape_string
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/escape_string/testsuite

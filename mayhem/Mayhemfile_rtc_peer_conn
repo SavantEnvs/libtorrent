@@ -1,0 +1,11 @@
+project: savantenvs/libtorrent
+target: rtc_peer_conn
+cmds:
+  - cmd: /mayhem/rtc_peer_conn
+    libfuzzer: true
+    # upstream's harness sets up a real WebRTC connection per input and waits up to 10 s for it;
+    # a slow or failed setup is not a hang in libtorrent — give each exec room for it.
+    timeout: 30
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/rtc_peer_conn/testsuite

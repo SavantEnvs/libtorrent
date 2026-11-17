@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: ut_metadata
+cmds:
+  - cmd: /mayhem/ut_metadata
+    libfuzzer: true
+    # upstream's harness drives a live libtorrent session over real sockets and waits (wall clock)
+    # for it to settle between inputs — up to several seconds; give each exec room for that.
+    timeout: 20

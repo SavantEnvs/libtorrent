@@ -1,0 +1,5 @@
+project: savantenvs/libtorrent
+target: hash_picker
+cmds:
+  - cmd: /mayhem/hash_picker
+    libfuzzer: true

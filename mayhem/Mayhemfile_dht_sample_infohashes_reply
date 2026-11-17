@@ -1,0 +1,8 @@
+project: savantenvs/libtorrent
+target: dht_sample_infohashes_reply
+cmds:
+  - cmd: /mayhem/dht_sample_infohashes_reply
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dht_sample_infohashes_reply/testsuite
